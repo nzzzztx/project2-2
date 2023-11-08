@@ -221,8 +221,9 @@
           class="btn btn-sparta-outline btn-lg">SAVE</button>
         {% else %}
         <button onclick="delete_word()" id="btn-delete" class="btn btn-sparta btn-lg">DELETE</button>
+        {% endif %}
 
-
+        {% if status == 'old' %}
         <div id="examples" class="container">
           <h3 style="text-align: center;margin-bottom: 1rem;">Write your own sentences!</h3>
           <ul id="example-list">
